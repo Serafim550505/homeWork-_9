@@ -60,29 +60,42 @@ public class Main {
 
 
         System.out.println(" Задание № 4 ");
+
         int[] inputArray4 = {5000, 3000, 1500, -200, 4000};
-        boolean outputArray4 = true;
-        for (int balanse : inputArray4){
-            if (balanse < 0){
-                outputArray4    = false ;
+        boolean[] outputArray4 = {true};
+        for (int balance : inputArray4) {
+            if (balance < 0) {
+                outputArray4[0] = false;
                 break;
             }
         }
         System.out.println("Баланс по месяцам: " + Arrays.toString(inputArray4));
-        System.out.println("Все балансы положительные: " + outputArray4);
+        System.out.println("Все балансы положительные: " + Arrays.toString(outputArray4));
         System.out.println(" \n ");
 
 
         System.out.println(" Задача № 5 ");
-        int [] inputArray5 = { 120000, -200000 , 150000 , 0 , 250000};
-        int outputArray5 = 0 ;
-        for (int  profit : inputArray5 ) {
-            if (profit > 0 ){
-                outputArray5++;
+        int[] inputArray5 = {120000, -200000, 150000, 0, 250000};
+        int [] outputArray5 ={0};
+        for (int profit : inputArray5) {
+            if (profit > 0) {
+                outputArray5[0]++;
             }
         }
         System.out.println("Прибыль по месяцам: " + Arrays.toString(inputArray5));
-        System.out.println("Количество рентабельных месяцев: " + outputArray5);
+        System.out.println("Количество рентабельных месяцев: " + Arrays.toString(outputArray5));
+        System.out.println(" \n ");
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
