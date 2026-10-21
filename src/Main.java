@@ -76,7 +76,7 @@ public class Main {
 
         System.out.println(" Задача № 5 ");
         int[] inputArray5 = {120000, -200000, 150000, 0, 250000};
-        int [] outputArray5 ={0};
+        int[] outputArray5 = {0};
         for (int profit : inputArray5) {
             if (profit > 0) {
                 outputArray5[0]++;
@@ -85,17 +85,6 @@ public class Main {
         System.out.println("Прибыль по месяцам: " + Arrays.toString(inputArray5));
         System.out.println("Количество рентабельных месяцев: " + Arrays.toString(outputArray5));
         System.out.println(" \n ");
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
